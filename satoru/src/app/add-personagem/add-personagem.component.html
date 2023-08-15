@@ -1,0 +1,24 @@
+<div class="cadastro-form">
+    <h2>Cadastro</h2>
+    <form (ngSubmit)="submitForm()" #cadastroForm="ngForm">
+      <div class="file">
+        <div class="image-preview" *ngIf="exibirImagem"><img [src]="imagemPreview" *ngIf="imagemPreview"></div>
+        <input class="form-control" type="file" accept="image/*" id="custominput" (change)="onFileChange($event)">
+        <label class="custom-input" for="custominput">Selecione a imagem do personagem</label>
+      </div>
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" [(ngModel)]="this.nome" required>
+      </div>
+      <div class="form-group">
+        <label for="anime">Anime:</label>
+        <input type="text" id="anime" name="anime" [(ngModel)]="this.anime" required>
+      </div>
+      <div class="form-group">
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" [(ngModel)]="this.descricao" required></textarea>
+      </div>
+      <button type="submit" [disabled]="!cadastroForm.valid">Cadastrar</button>
+    </form>
+  </div>
+  

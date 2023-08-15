@@ -1,0 +1,7 @@
+<div class="feed">
+    <div class="product-section" *ngFor="let personagem of personagens" (click)="goToPersonagem(personagem.id)">
+      <img src="http://localhost/php/api/service/personagem/{{ personagem.imagem }}" alt="Product Image">
+      <h3 class="product-name">{{ personagem.nome }}</h3>
+      <p class="product-description">{{ personagem.anime }}</p>
+    </div>
+  </div>

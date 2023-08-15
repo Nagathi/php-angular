@@ -1,0 +1,18 @@
+<div class="modal-header">
+    <h4 class="modal-title">Cadastro</h4>
+    <button style="background-color: transparent; border: none;" type="button" class="close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="image-preview" *ngIf="exibirImagem"><img [src]="imagemPreview" *ngIf="imagemPreview"></div>
+    <input class="form-control" type="file" accept="image/*" id="custominput" (change)="onFileChange($event)">
+    <label class="custom-input" for="custominput">Selecione sua foto de perfil aqui</label>
+    <input class="form-control" type="text" placeholder="Nome" [(ngModel)]="nome">
+    <input class="form-control" type="email" placeholder="Email" [(ngModel)]="email">
+    <input class="form-control" type="text" placeholder="Usuário" [(ngModel)]="usuario">
+    <input class="form-control" type="password" placeholder="Senha" [(ngModel)]="senha">
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="cadastrar()">Cadastrar</button>
+  </div>

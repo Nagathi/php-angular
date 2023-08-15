@@ -1,0 +1,93 @@
+.cadastro-form {
+    position: relative;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea{
+    height: 2%;
+  }
+
+  .modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body input{
+    margin-bottom: 15px;
+}
+.file{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input[type=file]{
+    display: none;
+}
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .custom-input{
+    display: flex;
+    width: 70%;
+    cursor: pointer;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+    background-color: purple;
+    border-radius: 10px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-preview{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+img{
+    border-radius: 50%;
+    border: 3px solid rgb(21, 179, 207);
+    max-width: 200px;
+    max-height: 200px;
+    
+}
